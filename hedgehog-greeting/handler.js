@@ -1,5 +1,5 @@
 exports.handler = async (event, context, callback) => {
-  const name = JSON.parse(event.body).hedgehog_name || 'hedgehog'
+  const name = JSON.parse(event.body).input.hedgehog_name || 'hedgehog'
   const output = [{
       key: "greeting",                 // internal key for bookkeeping
       label: 'Your hedgehog greeting', // customer facing label
